@@ -1,0 +1,1170 @@
+{
+    "defaultValues": {
+        "skyPath": "../supermario/Resources/Img/skyR.png",
+        "floorPath": "../supermario/Resources/Img/floor.png",
+        "blocksPath": "../supermario/Resources/Img/245.png",
+        "player": {
+            "h": 0.08125,
+            "w": 0.06875
+        }
+    },
+    "maps": [
+        {
+            "mapName": "base",
+            "enemies": [
+                {
+                    "x": 0.125,
+                    "y": 0.06875,
+                    "directionMove": false,
+                    "width": 0.056255,
+                    "height": 0.056255,
+                    "pathImg": "../supermario/Resources/Img/goom.png",
+                    "maxX": 0.25,
+                    "minX": 0.125,
+                    "speedX": 6
+                },
+                {
+                    "x": 0.625,
+                    "y": 0.19375,
+                    "directionMove": true,
+                    "width": 0.05625,
+                    "height": 0.05625,
+                    "pathImg": "../supermario/Resources/Img/goom.png",
+                    "maxX": 0.7375,
+                    "minX": 0.625,
+                    "speedX": 7
+                },
+                {
+                    "x": 0.125,
+                    "y": 0.44375,
+                    "directionMove": false,
+                    "width": 0.05625,
+                    "height": 0.05625,
+                    "pathImg": "../supermario/Resources/Img/goom.png",
+                    "maxX": 0.25,
+                    "minX": 0.125,
+                    "speedX": 5
+                }
+            ],
+            "sky": {
+                "skyBackground": "../supermario/Resources/Img/skyR.png"
+            },
+            "floor": {
+                "floorBackground": "../supermario/Resources/Img/floor.png",
+                "floorTiles": {
+                    "h": 0.05625,
+                    "w": 0.05625
+                }
+            },
+            "obstacles": {
+                "pathBlocks": "../supermario/Resources/Img/245.png",
+                "blocks": [
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.125,
+                        "y": 0.8875
+                    },
+
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.125,
+                        "y": 0.125
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.18125,
+                        "y": 0.125
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.2375,
+                        "y": 0.125
+                    },
+
+                    
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.4375,
+                        "y": 0.8125
+                    },
+
+
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.7375,
+                        "y": 0.25
+                    },
+
+
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.125,
+                        "y": 0.5
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.18125,
+                        "y": 0.5
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.2375,
+                        "y": 0.5
+                    },
+
+
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.75
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.75
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.7375,
+                        "y": 0.75
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "mapName": "collin",
+            "enemies": [
+                {
+                    "x": 0.625,
+                    "y":0.66875,
+                    "directionMove": false,
+                    "width":  0.08125,
+                    "height":0.08125,
+                    "pathImg": "../supermario/Resources/Img/collinGoomba.png",
+                    "maxX": 0.7375,
+                    "minX": 0.625,
+                    "speedX": 5
+                },
+                {
+                    "x": 0.125,
+                    "y": 0.41875,
+                    "directionMove": false,
+                    "width":  0.08125,
+                    "height": 0.08125,
+                    "pathImg": "../supermario/Resources/Img/collinGoomba.png",
+                    "maxX": 0.25,
+                    "minX": 0.125,
+                    "speedX": 5
+                }
+            ],
+            "coins": [
+                {
+                    "x": 100,
+                    "y": 100
+                }
+            ],
+            "sky": {
+                "skyBackground": "../supermario/Resources/Img/skyColl.png"
+            },
+            "floor": {
+                "floorBackground": "../supermario/Resources/Img/floorCollin.png",
+                "floorTiles": {
+                    "h": 0.05625,
+                    "w": 0.05625
+                }
+            },
+            "obstacles": {
+                "pathBlocks": "../supermario/Resources/Img/collinBlock.png",
+                "blocks": [
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.125,
+                        "y": 0.5
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.18125,
+                        "y": 0.5
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.2375,
+                        "y": 0.5
+                    },
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.5
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.5,
+                        "y": 0.75
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.75
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.75
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.7375,
+                        "y": 0.75
+                    }
+                ]
+            }
+        },
+        {
+            "mapName": "mount",
+            "enemies": [
+                {
+                    "x": 0.125,
+                    "y": 0.6125,
+                    "directionMove": false,
+                    "width": 0.08125,
+                    "height": 0.08125,
+                    "pathImg": "../supermario/Resources/Img/montGoomba.png",
+                    "maxX":0.2375,
+                    "minX": 0.125,
+                    "speedX":5
+                },
+                {
+                    "x": 0.655,
+                    "y": 0.86875,
+                    "directionMove": false,
+                    "width": 0.08125,
+                    "height": 0.08125,
+                    "pathImg": "../supermario/Resources/Img/montGoomba.png",
+                    "maxX":0.656,
+                    "minX": 0,
+                    "speedX":5
+                },
+                {
+                    "x": 0.625,
+                    "y": 0.19375,
+                    "directionMove": true,
+                    "width": 0.05625,
+                    "height": 0.05625,
+                    "pathImg": "../supermario/Resources/Img/montGoomba.png",
+                    "maxX": 0.7375,
+                    "minX": 0.625,
+                    "speedX":5
+                }
+            ],
+            "sky": {
+                "skyBackground": "../supermario/Resources/Img/skyMont.png"
+            },
+            "floor": {
+                "floorBackground": "../supermario/Resources/Img/floorBrown.png",
+                "floorTiles": {
+                    "h": 0.05625,
+                    "w": 0.05625
+                }
+            },
+            "obstacles": {
+                "pathBlocks": "../supermario/Resources/Img/brownBlock.png",
+                "blocks": [
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.7375,
+                        "y": 0.25
+                    },
+
+
+
+
+                    
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.125,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.18125,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.2375,
+                        "y": 0.69375
+                    },
+
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.7375,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.775,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.8125,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.85,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.8875,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.925,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.9625,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.775,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.8125,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.85,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.8875,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.925,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.9625,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.8125,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.85,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.8875,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.925,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.9625,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.85,
+                        "y": 0.79375
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.8875,
+                        "y": 0.79375
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.925,
+                        "y": 0.79375
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.9625,
+                        "y": 0.79375
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.8875,
+                        "y": 0.75625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.925,
+                        "y": 0.75625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.9625,
+                        "y": 0.75625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.925,
+                        "y": 0.71875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.9625,
+                        "y": 0.71875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.9625,
+                        "y": 0.68125
+                    }
+                ]
+            }
+        },
+        {
+            "mapName": "sky",
+            "enemies": [
+                {
+                    "x": 0.94375,
+                    "y": 0.893755,
+                    "directionMove": false,
+                    "width": 0.0625,
+                    "height": 0.05625,
+                    "pathImg": "../supermario/Resources/Img/goombaSky.png",
+                    "maxX": 1,
+                    "minX": 0,
+                    "speedX": 5
+                },
+                {
+                    "x": 0.94375,
+                    "y": 0.125,
+                    "directionMove": false,
+                    "width": 0.0625,
+                    "height": 0.05625,
+                    "pathImg": "../supermario/Resources/Img/goombaSky.png",
+                    "maxX": 1,
+                    "minX": 0,
+                    "speedX": 5
+                },
+                {
+                    "x": 0.94375,
+                    "y": 0.25,
+                    "directionMove": false,
+                    "width": 0.0625,
+                    "height": 0.05625,
+                    "pathImg": "../supermario/Resources/Img/goombaSky.png",
+                    "maxX": 1,
+                    "minX": 0,
+                    "speedX": 6
+                },
+                {
+                    "x": 0.94375,
+                    "y": 0.375,
+                    "directionMove": false,
+                    "width":0.0625,
+                    "height": 0.05625,
+                    "pathImg": "../supermario/Resources/Img/goombaSky.png",
+                    "maxX": 1,
+                    "minX": 0,
+                    "speedX": 7
+                },
+                {
+                    "x": 0.94375,
+                    "y": 0.5,
+                    "directionMove": false,
+                    "width": 0.0625,
+                    "height": 0.05625,
+                    "pathImg": "../supermario/Resources/Img/goombaSky.png",
+                    "maxX": 1,
+                    "minX": 0,
+                    "speedX": 5
+                },
+                {
+                    "x": 0.94375,
+                    "y": 0.625,
+                    "directionMove": false,
+                    "width":0.0625,
+                    "height": 0.05625,
+                    "pathImg": "../supermario/Resources/Img/goombaSky.png",
+                    "maxX": 1,
+                    "minX": 0,
+                    "speedX": 4
+                }
+            ],
+            "sky": {
+                "skyBackground": "../supermario/Resources/Img/skysky.png"
+            },
+            "floor": {
+                "floorBackground": "../supermario/Resources/Img/floorBlue.png",
+                "floorTiles": {
+                    "h": 0.05625,
+                    "w": 0.05625
+                }
+            },
+            "obstacles": {
+                "pathBlocks": "../supermario/Resources/Img/blueBlock.png",
+                "blocks": [
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.56875,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.53125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.0375,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.075,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.1125,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.15,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.1875,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.225,
+                        "y": 0.90625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.0375,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.075,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.1125,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.15,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.1875,
+                        "y": 0.86875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.0375,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.075,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.1125,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.15,
+                        "y": 0.83125
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0,
+                        "y": 0.79375
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.0375,
+                        "y": 0.79375
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.075,
+                        "y": 0.79375
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.1125,
+                        "y": 0.79375
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0,
+                        "y": 0.75625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.0375,
+                        "y": 0.75625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.075,
+                        "y": 0.75625
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0,
+                        "y": 0.71875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0.0375,
+                        "y": 0.71875
+                    },
+                    {
+                        "h": 0.0375,
+                        "w": 0.0375,
+                        "x": 0,
+                        "y": 0.68125
+                    }
+                ]
+            }
+        },
+
+
+        
+        {
+            "mapName": "water",
+            "enemies": [
+                {
+                    "x": 0.625,
+                    "y": 0.16875,
+                    "directionMove": true,
+                    "width":0.05625,
+                    "height": 0.08125,
+                    "pathImg": "../supermario/Resources/Img/waterGoomba.png",
+                    "maxX": 0.7375,
+                    "minX": 0.625,
+                    "speedX":4
+                },
+                {
+                    "x": 0.125,
+                    "y": 0.6125,
+                    "directionMove": false,
+                    "width":0.05625,
+                    "height": 0.08125,
+                    "pathImg": "../supermario/Resources/Img/waterGoomba.png",
+                    "maxX": 0.2375,
+                    "minX": 0.125,
+                    "speedX": 5
+                }
+            
+            ],
+            "sky": {
+                "skyBackground": "../supermario/Resources/Img/water.png"
+            },
+            "floor": {
+                "floorBackground": "../supermario/Resources/Img/floorGreen.png",
+                "floorTiles": {
+                    "h": 0.05625,
+                    "w": 0.05625
+                }
+            },
+            "obstacles": {
+                "pathBlocks": "../supermario/Resources/Img/greenBlock.png",
+                "blocks": [
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.7375,
+                        "y": 0.25
+                    },
+
+
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.125,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.18125,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.2375,
+                        "y": 0.69375
+                    }
+                ]
+            }
+        }, {
+            "mapName": "city",
+            "enemies": [
+                {
+                    "x": 0.625,
+                    "y": 0.16875,
+                    "directionMove": true,
+                    "width": 0.05625,
+                    "height":0.08125,
+                    "pathImg": "../supermario/Resources/Img/goombaCity.png",
+                    "maxX": 0.7375,
+                    "minX": 0.625,
+                    "speedX": 7
+                },
+                {
+                    "x": 0.125,
+                    "y": 0.6125,
+                    "directionMove": false,
+                    "width":0.05625,
+                    "height": 0.08125,
+                    "pathImg": "../supermario/Resources/Img/goombaCity.png",
+                    "maxX": 0.2375,
+                    "minX":0.125,
+                    "speedX": 5
+                }
+            ],
+            "sky": {
+                "skyBackground": "../supermario/Resources/Img/city.png"
+            },
+            "floor": {
+                "floorBackground": "../supermario/Resources/Img/floorCity.png",
+                "floorTiles": {
+                    "h": 0.05625,
+                    "w": 0.05625
+                }
+            },
+            "obstacles": {
+                "pathBlocks": "../supermario/Resources/Img/blockCity.png",
+                "blocks": [
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.7375,
+                        "y": 0.25
+                    },
+
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.125,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.18125,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.2375,
+                        "y": 0.69375
+                    }
+                ]
+            }
+        },
+        {
+            "mapName": "winter",
+            "enemies": [
+                {
+                    "x": 0.625,
+                    "y": 0.16875,
+                    "directionMove": true,
+                    "width": 0.05625,
+                    "height":0.08125,
+                    "pathImg": "../supermario/Resources/Img/goombaWinter.png",
+                    "maxX": 0.7375,
+                    "minX": 0.625,
+                    "speedX": 5
+                },
+                {
+                    "x": 0.655,
+                    "y": 0.86875,
+                    "directionMove": false,
+                    "width":0.05625,
+                    "height": 0.08125,
+                    "pathImg": "../supermario/Resources/Img/goombaWinter.png",
+                    "maxX":0.94375,
+                    "minX": 0,
+                    "speedX":5
+                },   {
+                    "x": 0.500,
+                    "y": 0.86875,
+                    "directionMove": false,
+                    "width":0.05625,
+                    "height": 0.08125,
+                    "pathImg": "../supermario/Resources/Img/goombaWinter.png",
+                    "maxX":0.94375,
+                    "minX": 0,
+                    "speedX":5
+                } 
+               
+            ],
+            "sky": {
+                "skyBackground": "../supermario/Resources/Img/neve.png"
+            },
+            "floor": {
+                "floorBackground": "../supermario/Resources/Img/floorIce.png",
+                "floorTiles": {
+                    "h": 0.05625,
+                    "w": 0.05625
+                }
+            },
+            "obstacles": {
+                "pathBlocks": "../supermario/Resources/Img/whiteBlock.png",
+                "blocks": [
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.7375,
+                        "y": 0.25
+                    },
+
+
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.57,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.25,
+                        "y": 0.69375
+                    }
+                ]
+            }
+        },
+       
+        {
+            "mapName": "desert",
+            "enemies": [
+                {
+                    "x": 0.625,
+                    "y": 0.16875,
+                    "directionMove": true,
+                    "width": 0.05625,
+                    "height":0.08125,
+                    "pathImg": "../supermario/Resources/Img/desertGoomba.png",
+                    "maxX": 0.7375,
+                    "minX": 0.625,
+                    "speedX": 7
+                },
+
+                {
+                    "x": 0.125,
+                    "y": 0.6125, 
+                    "directionMove": false,
+                    "width":0.05625,
+                    "height": 0.08125,
+                    "pathImg": "../supermario/Resources/Img/desertGoomba.png",
+                    "maxX": 0.2375,
+                    "minX":0.125,
+                    "speedX": 5
+                }
+            ],
+            "sky": {
+                "skyBackground": "../supermario/Resources/Img/desert.png"
+            },
+            "floor": {
+                "floorBackground": "../supermario/Resources/Img/floorDes.png",
+                "floorTiles": {
+                    "h": 0.05625,
+                    "w": 0.05625
+                }
+            },
+            "obstacles": {
+                "pathBlocks": "../supermario/Resources/Img/yellowBlock.png",
+                "blocks": [
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.625,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.68125,
+                        "y": 0.25
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.7375,
+                        "y": 0.25
+                    },
+
+
+
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.125,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.18125,
+                        "y": 0.69375
+                    },
+                    {
+                        "h": 0.05625,
+                        "w": 0.05625,
+                        "x": 0.2375,
+                        "y": 0.69375
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "mapName": "volcano",
+            "enemies": [
+                {
+                    "x": 0.5,
+                    "y": 0.44375,
+                    "directionMove": false,
+                    "width": 0.5,
+                    "height": 0.5,
+                    "pathImg": "../supermario/Resources/Img/dragonB.png",
+                    "maxX": 0.75,
+                    "minX": 0.75,
+                    "speedX": 0
+                }
+            ],
+            "sky": {
+                "skyBackground": "../supermario/Resources/Img/vulcano.png"
+            },
+            "floor": {
+                "floorBackground": "../supermario/Resources/Img/lavv.png",
+                "floorTiles": {
+                    "h": 0.05625,
+                    "w": 0.05625
+                }
+            },
+            "obstacles": {
+                "pathBlocks": "../supermario/Resources/Img/yellowBlock.png",
+                "blocks": []
+            }
+        }
+    ]
+}

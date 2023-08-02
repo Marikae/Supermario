@@ -1,0 +1,144 @@
+class Enemys  {
+    private playerRect: Rectangle;
+    private directionMove: boolean;
+    private hFloor: number;
+    private enemys: Rectangle[] = [];
+    private wPlayer: number;
+    private hPlayer: number;
+    private posActual: Pt2D;
+    private posStart: Pt2D;
+    private pressedLeft: boolean = false;
+    private pressedRight: boolean = false;
+    private pressedSpace: boolean = false;
+    private lastPressedLeft: boolean = false;
+    private heightAmbient: number;
+    private widthAmbient: number;
+    private actualMoveType: Moves;
+
+    constructor(hFloor: number, wPlayer: number, hPlayer: number, heightAmbient: number, widthAmbient: number) {
+        
+       
+        this.directionMove = true;
+        this.hFloor=hFloor;
+    }
+    
+    public draw(context: CanvasRenderingContext2D, i:number): void {
+        for (let i = 0; i < this.enemys.length; i++) {
+            this.enemys[i].draw(context, i);
+        }
+    }
+ 
+    public generateEnemys(): any {
+      for (let i = 0; i < 7; i++) {
+            let minX = 0;
+            let maxX = this.widthAmbient - this.wPlayer;
+            let minY = this.heightAmbient - this.hPlayer - this.hFloor;
+            let maxY = this.heightAmbient - this.hPlayer - this.hFloor;
+
+            let originX = this.getRandomEnemys(minX, maxX);
+            let originY = this.getRandomEnemys(minY, maxY);
+          
+            let step: number= 45;
+            let y = (originY % step);
+     
+            let rectBlock: Rectangle = new Rectangle(this.hPlayer, this.wPlayer, new Pt2D(originX, originY));
+
+            rectBlock.setImage("../supermario/Resources/Img/goom.png");
+            this.enemys.push(rectBlock);
+        }
+    }
+    public getRandomEnemys(min: number, max: number): number {
+        min = Math.ceil(min)
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+
+    public executeMove(): void {
+        if (this.directionMove == true) {
+            this.moveRight();
+        } else this.moveLeft();
+
+        if (this.posActual.getX() > this.widthAmbient - this.wPlayer) {
+            this.directionMove = !this.directionMove;
+        } else if (this.posActual.getX() < 0) {
+            this.directionMove = !this.directionMove;
+        }
+    }
+    public moveLeft(): void {
+        let delta: Pt2D = new Pt2D(-10, 0);
+        this.playerRect.moveDelta(delta);
+        this.posActual = this.playerRect.getOrigin();
+        this.playerRect = new Rectangle(this.hPlayer, this.wPlayer, this.posActual);
+        this.playerRect.setImage(this.getPathLeftImg());
+        this.actualMoveType = Moves.Left;
+        this.moveDown();
+        this.lastPressedLeft = true;
+    }
+    public moveRight(): void {
+        let delta: Pt2D = new Pt2D(10, 0);
+        this.playerRect.moveDelta(delta);
+        this.posActual = this.playerRect.getOrigin();
+        this.playerRect = new Rectangle(this.hPlayer, this.wPlayer, this.posActual);
+        this.playerRect.setImage(this.getPathRightImg());
+        this.actualMoveType = Moves.Right;
+        this.moveDown();
+        this.lastPressedLeft = false;
+    }
+    public moveJumpLeft(): void {
+        let delta: Pt2D = new Pt2D(-10, -10);
+        this.playerRect.moveDelta(delta);
+        this.posActual = this.playerRect.getOrigin();
+        this.playerRect = new Rectangle(this.hPlayer, this.wPlayer, this.posActual);
+        this.playerRect.setImage(this.getPathJumpLeftImg());
+        this.actualMoveType = Moves.JumpLeft;
+        this.lastPressedLeft = true;
+    }
+    public moveJumpRight(): void {
+        let delta: Pt2D = new Pt2D(+10, -10);
+        this.playerRect.moveDelta(delta);
+        this.posActual = this.playerRect.getOrigin();
+        this.playerRect = new Rectangle(this.hPlayer, this.wPlayer, this.posActual);
+        this.playerRect.setImage(this.getPathJumpRightImg());
+        this.actualMoveType = Moves.JumpRight;
+        this.lastPressedLeft = false;
+    }
+    public moveJumpUp(): void {
+        let delta: Pt2D = new Pt2D(0, -45);
+        this.playerRect.moveDelta(delta);
+        this.posActual = this.playerRect.getOrigin();
+        if (this.lastPressedLeft == true)
+            this.playerRect.setImage(this.getPathJumpLeftImg());
+        else if (this.lastPressedLeft == false)
+            this.playerRect.setImage(this.getPathJumpRightImg());
+        this.actualMoveType = Moves.JumpUp;
+    }
+    public moveDown(): void {
+        let delta: Pt2D = new Pt2D(0, +10);
+        this.playerRect.moveDelta(delta);
+        this.posActual = this.playerRect.getOrigin();
+        if (this.posActual.getY() > this.posStart.getY()) {
+            this.posActual.setY(this.posStart.getY());
+            this.playerRect.moveOnPoint(this.posActual);
+            if (this.lastPressedLeft == true)
+                this.actualMoveType = Moves.Left;
+        } else
+            this.actualMoveType = Moves.Right;
+        if (this.lastPressedLeft)
+            this.playerRect.setImage(this.getPathLeftImg());
+        else if (this.lastPressedLeft == false)
+            this.playerRect.setImage(this.getPathRightImg());
+    }
+    public getPathJumpRightImg(): string {
+        return "../supermario/Resources/Img/goom.png";
+    }
+    public getPathJumpLeftImg(): string {
+        return "../supermario/Resources/Img/goombalB.png";
+    }
+    public getPathLeftImg(): string {
+        return "../supermario/Resources/Img/goombalB.png";
+    }
+    public getPathRightImg(): string {
+        return "../supermario/Resources/Img/goom.png";
+    }
+}

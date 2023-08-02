@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outFile": "main.js"
+    },
+    "files": [
+        "Math.ts",
+        "DataStructure/Bullet.ts",
+        "DataStructure/Ambient/RandomAmbient.ts",
+        "DataStructure/Enumerators.ts",
+        "DataStructure/ItemMenager.ts",
+        "DataStructure/Item.ts",
+        "DataStructure/Pt2D.ts",
+        "DataStructure/Triangle.ts",
+        "DataStructure/Circle.ts",
+        "DataStructure/Rectangle.ts",
+        "DataStructure/Ambient/Ambient.ts",
+        "DataStructure/Ambient/Floor.ts",
+        "DataStructure/Ambient/Sky.ts",
+        "DataStructure/Player.ts",
+        "DataStructure/Enemy.ts",
+        "DataStructure/Enemies.ts",
+        "DataStructure/Mario.ts",
+        "DataStructure/ScoreManager.ts",
+        "DataStructure/Coin.ts",
+        "DataStructure/CoinsManager.ts",
+        "DataStructure/MoveCoin.ts",
+        "Game/Game.ts",
+        "Game/Explosion.ts",
+        "main.ts",
+    ]
+}
